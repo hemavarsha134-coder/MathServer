@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>form</title>
+    </head>
+    <body>
+       <h1>Hemavarsha (26005666)</h1>
+       <h2>churn rate</h2>
+        <form method="POST">
+        {%csrf_token%}
+        <form>
+             <label>customer lost:</label>
+             <input type="number" name="CustomerLost" value="{{Customers_Lost}}">
+             <br>
+             <br>
+             <label>initial customer:</label>
+             <input type="text" name="InitialCust" value="{{Initial_Customer}}">
+             <br>
+             <br>
+             <input type="submit" value="calculate">
+             <br>
+             <br>
+             <label>churn rate:</label>
+             <input type="text"  value="{{churn_rate}}">
+       </form>
+
+    </body>   
+</html>
