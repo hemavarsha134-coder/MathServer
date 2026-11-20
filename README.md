@@ -1,5 +1,5 @@
 # Ex.03 Design a Website for Server Side Processing
-## Date:16/11/2026
+## Date:20/11/2026
 
 ## AIM:
 To create a web page to calculate Churn Rate using server-side scripts.
@@ -42,6 +42,9 @@ Render the result to the HTML template.
 Publish the website in Localhost.
 
 ## PROGRAM:
+```
+varsha.html
+
 <html>
     <head>
         <title>form</title>
@@ -70,7 +73,7 @@ Publish the website in Localhost.
     </body>   
 </html>
 
-views.py
+views.py 
 
 from django.shortcuts import render
 
@@ -105,14 +108,14 @@ from myapp import views
 urlpatterns = [
     path('', views.churn_rate, name='churn_rate'),
 ]
+```
 
 
 ## OUTPUT - SERVER SIDE:
-![alt text](<Screenshot 2026-11-16 122112.png>)
+![alt text](<Screenshot (10)-1.png>)
 
 ## OUTPUT - WEBPAGE:
-![alt text](<Screenshot 2026-11-16 122130.png>)
+![alt text](<Screenshot (9).png>)
 
 ## RESULT:
 The the web page to calculate Churn Rate using server-side scripts is created successfully.
-
